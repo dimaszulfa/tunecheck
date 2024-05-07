@@ -1,10 +1,14 @@
 package gfg.bangkit.capstone.tunecheck
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.google.firebase.ktx.Firebase
+import com.google.firebase.storage.FirebaseStorage
+import com.google.firebase.storage.ktx.storage
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -34,6 +38,68 @@ class ProfileFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
+        val firebaseStorage = Firebase.storage
+        val storageRef = firebaseStorage.reference
+
+// Create a reference to 'images/mountains.jpg'
+        val mountainsRef = storageRef.child("images/mountains.jpg")
+
+// Create a reference to 'images/mountains.jpg'
+        val mountainImagesRef = storageRef.child("images/mountains.jpg")
+
+// While the file names are the same, the references point to different files
+        mountainsRef.name == mountainImagesRef.name // true
+        mountainsRef.path == mountainImagesRef.path // false
+        val dataStorageRef = FirebaseStorage.getInstance().reference.child("images")
+
+
+        dataStorageRef.listAll()
+            .addOnSuccessListener { listResult ->
+                for (item in listResult.items) {
+                    item.downloadUrl
+                        .addOnSuccessListener { uri ->
+                            val downloadUrl = uri.toString()
+                            // Use the download URL of the image
+                            Log.d("TAG", "Download URL: $downloadUrl")
+                            // Now you can do whatever you need with the download URL
+                            // For example, you can store it in a list or use it to load images into an ImageView
+                        }
+                        .addOnFailureListener { exception ->
+                            // Handle any errors
+                            Log.e("TAG", "Error getting download URL for item: ${item.name}", exception)
+                        }
+                }
+            }
+            .addOnFailureListener { exception ->
+                // Handle the error when listing items
+                Log.e("TAG", "Error listing items", exception)
+            }
+
+//        dataStorageRef.listAll()
+//            .addOnSuccessListener { listResult ->
+//                for (item in listResult.items) {
+//                    // Mendapatkan metadata item
+//                    item.metadata.addOnSuccessListener { metadata ->
+//                        // Dapatkan URL download dan detail lainnya dari metadata
+//                        val contentType = metadata.contentType
+//                        val sizeBytes = metadata.sizeBytes
+//                        val creationTimeMillis = metadata.creationTimeMillis
+//                        // Dan sebagainya
+//
+//                        // Sekarang Anda bisa melakukan apa pun yang Anda inginkan dengan detail item
+//                        Log.d("TAG", "Download URL: $sizeBytes")
+//                    }.addOnFailureListener { exception ->
+//                        // Penanganan kesalahan ketika gagal mendapatkan metadata
+//                        Log.e("TAG", "Error getting metadata for item: ${item.name}", exception)
+//                    }
+//                }
+//            }
+//            .addOnFailureListener { exception ->
+//                // Penanganan kesalahan ketika gagal mendapatkan daftar item
+//                Log.e("TAG", "Error listing items", exception)
+//            }
+        Log.e("MOUNTAINS REF", mountainsRef.name)
+        Log.e("MOUNTAINS REF", mountainsRef.path)
         return inflater.inflate(R.layout.fragment_profile, container, false)
     }
 
