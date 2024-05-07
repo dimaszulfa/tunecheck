@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "gfg.bangkit.capstone.tunecheck.app-mergeDebugResources-36:/values-hdpi-v4/values-hdpi-v4.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\ERP1\\.gradle\\caches\\transforms-3\\d250a7473c3e203651fda9eaa421094e\\transformed\\appcompat-1.2.0\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "13",
+                        "endOffsets": "327"
+                    }
+                }
+            ]
+        }
+    ]
+}
