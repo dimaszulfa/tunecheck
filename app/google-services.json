@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "690649406372",
+    "project_id": "tunecheck-48b15",
+    "storage_bucket": "tunecheck-48b15.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:690649406372:android:876189a73f0654933ebf31",
+        "android_client_info": {
+          "package_name": "org.tensorflow.codelabs.objectdetection"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpsdbh4_nvXUj7D22tEHci0PcQ_Cxhf6k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

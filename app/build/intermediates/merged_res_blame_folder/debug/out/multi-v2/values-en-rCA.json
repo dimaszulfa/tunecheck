@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "gfg.bangkit.capstone.tunecheck.app-mergeDebugResources-36:/values-en-rCA/values-en-rCA.xml",
+            "outputFile": "gfg.bangkit.capstone.tunecheck.app-mergeDebugResources-40:/values-en-rCA/values-en-rCA.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ERP1\\.gradle\\caches\\transforms-3\\d250a7473c3e203651fda9eaa421094e\\transformed\\appcompat-1.2.0\\res\\values-en-rCA\\values-en-rCA.xml",
+                    "source": "C:\\Users\\ERP1\\.gradle\\caches\\transforms-3\\5bd2c1b1e2ffe0276153404257316537\\transformed\\appcompat-1.2.0\\res\\values-en-rCA\\values-en-rCA.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\ERP1\\.gradle\\caches\\transforms-3\\4ab76bf960be61930889e41dc2655aae\\transformed\\core-1.9.0\\res\\values-en-rCA\\values-en-rCA.xml",
+                    "source": "C:\\Users\\ERP1\\.gradle\\caches\\transforms-3\\6c5e0a1f55d4d757e183d84b21368fc8\\transformed\\core-1.9.0\\res\\values-en-rCA\\values-en-rCA.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

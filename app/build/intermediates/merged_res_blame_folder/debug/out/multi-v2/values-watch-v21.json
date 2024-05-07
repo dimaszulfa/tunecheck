@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "gfg.bangkit.capstone.tunecheck.app-mergeDebugResources-36:/values-watch-v21/values-watch-v21.xml",
+            "outputFile": "gfg.bangkit.capstone.tunecheck.app-mergeDebugResources-40:/values-watch-v21/values-watch-v21.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ERP1\\.gradle\\caches\\transforms-3\\d250a7473c3e203651fda9eaa421094e\\transformed\\appcompat-1.2.0\\res\\values-watch-v21\\values-watch-v21.xml",
+                    "source": "C:\\Users\\ERP1\\.gradle\\caches\\transforms-3\\5bd2c1b1e2ffe0276153404257316537\\transformed\\appcompat-1.2.0\\res\\values-watch-v21\\values-watch-v21.xml",
                     "from": {
                         "startLines": "2,6,10",
                         "startColumns": "4,4,4",

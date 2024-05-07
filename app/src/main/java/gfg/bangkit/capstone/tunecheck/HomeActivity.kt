@@ -24,6 +24,8 @@ class HomeActivity : AppCompatActivity() {
                 }
                 1 -> {
                     loadFragment(ListFragment())
+                    Log.e("TAG", "Pindah")
+
                 }
                 2 -> {
                     loadFragment(ProfileFragment())

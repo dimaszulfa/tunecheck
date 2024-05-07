@@ -1,20 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "gfg.bangkit.capstone.tunecheck.app-mergeDebugResources-36:/values-v16/values-v16.xml",
+            "outputFile": "gfg.bangkit.capstone.tunecheck.app-mergeDebugResources-40:/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ERP1\\.gradle\\caches\\transforms-3\\4ab76bf960be61930889e41dc2655aae\\transformed\\core-1.9.0\\res\\values-v16\\values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\ERP1\\.gradle\\caches\\transforms-3\\d250a7473c3e203651fda9eaa421094e\\transformed\\appcompat-1.2.0\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\ERP1\\.gradle\\caches\\transforms-3\\5bd2c1b1e2ffe0276153404257316537\\transformed\\appcompat-1.2.0\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -30,6 +20,16 @@
                         "endLines": "6",
                         "endColumns": "12",
                         "endOffsets": "289"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\ERP1\\.gradle\\caches\\transforms-3\\6c5e0a1f55d4d757e183d84b21368fc8\\transformed\\core-1.9.0\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
                     }
                 }
             ]

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gcm_defaultSenderId" translatable="false">690649406372</string>
+    <string name="google_api_key" translatable="false">AIzaSyBpsdbh4_nvXUj7D22tEHci0PcQ_Cxhf6k</string>
+    <string name="google_app_id" translatable="false">1:690649406372:android:876189a73f0654933ebf31</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBpsdbh4_nvXUj7D22tEHci0PcQ_Cxhf6k</string>
+    <string name="google_storage_bucket" translatable="false">tunecheck-48b15.appspot.com</string>
+    <string name="project_id" translatable="false">tunecheck-48b15</string>
+</resources>
