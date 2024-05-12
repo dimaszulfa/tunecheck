@@ -9,15 +9,19 @@ import android.os.Bundle
 import android.os.Environment
 import android.provider.MediaStore
 import android.util.Log
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import androidx.core.content.FileProvider
 import androidx.exifinterface.media.ExifInterface
 import androidx.lifecycle.lifecycleScope
+import gfg.bangkit.capstone.tunecheck.auth.RegisterActivity
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import me.ibrahimsn.lib.SmoothBottomBar
@@ -47,7 +51,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var imgSampleThree: ImageView
     private lateinit var tvPlaceholder: TextView
     private lateinit var currentPhotoPath: String
-    private lateinit var bottomBar: SmoothBottomBar
+//    private lateinit var bottomBar: SmoothBottomBar
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -59,26 +63,52 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         imgSampleTwo = findViewById(R.id.imgSampleTwo)
         imgSampleThree = findViewById(R.id.imgSampleThree)
         tvPlaceholder = findViewById(R.id.tvPlaceholder)
-        bottomBar = findViewById(R.id.bottomBar)
+    val toolbar = findViewById<Toolbar>(R.id.toolbar)
+    setSupportActionBar(toolbar)
+//        bottomBar = findViewById(R.id.bottomBar)
 
         captureImageFab.setOnClickListener(this)
         imgSampleOne.setOnClickListener(this)
         imgSampleTwo.setOnClickListener(this)
         imgSampleThree.setOnClickListener(this)
 
-        bottomBar.onItemSelected = {
-            Toast.makeText(this@MainActivity,"Item $it selected",Toast.LENGTH_SHORT).show()
-        }
 
-        bottomBar.onItemReselected = {
-            Toast.makeText(this@MainActivity,"Item $it re selected",Toast.LENGTH_SHORT).show()
-        }
+
+//        bottomBar.onItemSelected = {
+//            Toast.makeText(this@MainActivity,"Item $it selected",Toast.LENGTH_SHORT).show()
+//        }
+//
+//        bottomBar.onItemReselected = {
+//            Toast.makeText(this@MainActivity,"Item $it re selected",Toast.LENGTH_SHORT).show()
+//        }
 
         selectBtn.setOnClickListener {
             val intent = Intent()
             intent.setType("image/*")
             intent.setAction(Intent.ACTION_GET_CONTENT)
             startActivityForResult(intent , 123)
+        }
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu_main, menu)
+        return true    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            R.id.action_profile -> {
+                Log.d("tag", "clicked");
+                Toast.makeText(this@MainActivity, "Navigate To Profile", Toast.LENGTH_SHORT).show()
+                // Handle profile button click
+                val intent = Intent(this@MainActivity, ProfileActivity::class.java)
+                startActivity(intent)
+                true
+            }
+            else -> {
+                Log.d("tag", "clickesd");
+
+                super.onOptionsItemSelected(item)
+            }
         }
     }
 

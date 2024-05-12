@@ -1033,6 +1033,10 @@ color bright_foreground_inverse_material_dark
 color bright_foreground_inverse_material_light
 color bright_foreground_material_dark
 color bright_foreground_material_light
+color browser_actions_bg_grey
+color browser_actions_divider_color
+color browser_actions_text_color
+color browser_actions_title_color
 color button_material_dark
 color button_material_light
 color cardview_dark_background
@@ -1186,6 +1190,7 @@ color mtrl_textinput_focused_box_stroke_color
 color mtrl_textinput_hovered_box_stroke_color
 color notification_action_color_filter
 color notification_icon_bg_color
+color primaryApp
 color primary_dark_material_dark
 color primary_dark_material_light
 color primary_material_dark
@@ -1297,6 +1302,8 @@ dimen abc_text_size_title_material
 dimen abc_text_size_title_material_toolbar
 dimen action_bar_size
 dimen appcompat_dialog_background_inset
+dimen browser_actions_context_menu_max_width
+dimen browser_actions_context_menu_min_padding
 dimen cardview_compat_inset_shadow
 dimen cardview_default_elevation
 dimen cardview_default_radius
@@ -1707,6 +1714,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable cnr
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
@@ -1744,6 +1752,10 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_other_sign_in
+drawable ic_passkey
+drawable ic_password
+drawable ic_profile
 drawable logo
 drawable material_cursor_drawable
 drawable material_ic_calendar_black_24dp
@@ -1780,6 +1792,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable splash
 drawable test_custom_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -1848,6 +1861,7 @@ id action_menu_presenter
 id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
+id action_profile
 id action_text
 id actions
 id activity_chooser_view_content
@@ -1872,11 +1886,17 @@ id beginOnFirstDraw
 id beginning
 id blocking
 id bottom
-id bottomBar
 id bottomNav
 id bottom_left
 id bottom_right
 id bounce
+id browser_actions_header_text
+id browser_actions_menu_item_icon
+id browser_actions_menu_item_text
+id browser_actions_menu_items
+id browser_actions_menu_view
+id btnLogin
+id btnLogout
 id buttonPanel
 id cache_measures
 id cancel_button
@@ -1947,6 +1967,11 @@ id end
 id endToStart
 id enterAlways
 id enterAlwaysCollapsed
+id etEmail
+id etFirstName
+id etLastName
+id etPassword
+id etUsername
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -1983,10 +2008,13 @@ id ignore
 id ignoreRequest
 id image
 id imageView
+id imageViewSplash
 id imgSampleOne
 id imgSampleThree
 id imgSampleTwo
 id info
+id inputLayoutPassword
+id inputLayoutSignIn
 id invisible
 id inward
 id italic
@@ -1994,12 +2022,16 @@ id item0
 id item1
 id item2
 id item_touch_helper_previous_elevation
+id ivLogin
 id jumpToEnd
 id jumpToStart
 id labelGroup
 id labeled
 id largeLabel
 id layout
+id lbPassword
+id lbemail
+id lbusername
 id left
 id leftToRight
 id light
@@ -2010,6 +2042,7 @@ id listMode
 id list_item
 id llSampleImage
 id llbtn
+id main
 id masked
 id material_clock_display
 id material_clock_face
@@ -2064,6 +2097,7 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
+id name
 id nav_controller_view_tag
 id nav_host_fragment_container
 id navigation_header_container
@@ -2176,6 +2210,7 @@ id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
+id termsandLogin
 id test_checkbox_android_button_tint
 id test_checkbox_app_button_tint
 id test_radiobutton_android_button_tint
@@ -2203,6 +2238,7 @@ id title
 id titleDividerNoCustom
 id title_template
 id toggle
+id toolbar
 id top
 id topPanel
 id top_left
@@ -2217,12 +2253,16 @@ id transition_scene_layoutid_cache
 id transition_transform
 id triangle
 id tvDescription
+id tvLogin
 id tvPlaceholder
+id tvRegister
+id tvSignIn
 id unchecked
 id uniform
 id unlabeled
 id up
 id useLogo
+id userProfile
 id view_offset_helper
 id view_tree_lifecycle_owner
 id view_tree_on_back_pressed_dispatcher_owner
@@ -2299,7 +2339,14 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_home
+layout activity_login
 layout activity_main
+layout activity_profile
+layout activity_register
+layout activity_splash_screen
+layout browser_actions_context_menu_page
+layout browser_actions_context_menu_row
+layout content_activity_main
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -2387,6 +2434,7 @@ layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
 menu menu
+menu menu_main
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
@@ -2418,6 +2466,8 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string android_credentials_TYPE_PASSWORD_CREDENTIAL
+string androidx_credentials_TYPE_PUBLIC_KEY_CREDENTIAL
 string androidx_startup
 string app_name
 string appbar_scrolling_view_behavior
@@ -2446,11 +2496,15 @@ string common_google_play_services_wear_update_text
 string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
+string copy_toast_msg
 string ellipsis
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
+string fallback_menu_item_copy_link
+string fallback_menu_item_open_in_browser
+string fallback_menu_item_share_link
 string gcm_defaultSenderId
 string google_api_key
 string google_app_id
@@ -2938,6 +2992,7 @@ style Theme_Design_Light
 style Theme_Design_Light_BottomSheetDialog
 style Theme_Design_Light_NoActionBar
 style Theme_Design_NoActionBar
+style Theme_Hidden
 style Theme_MaterialComponents
 style Theme_MaterialComponents_BottomSheetDialog
 style Theme_MaterialComponents_Bridge
@@ -3038,6 +3093,7 @@ style ThemeOverlay_MaterialComponents_TimePicker_Display
 style ThemeOverlay_MaterialComponents_Toolbar_Primary
 style ThemeOverlay_MaterialComponents_Toolbar_Surface
 style ThemeOverlayColorAccentRed
+style WhiteTextInputEditTextStyle
 style Widget_AppCompat_ActionBar
 style Widget_AppCompat_ActionBar_Solid
 style Widget_AppCompat_ActionBar_TabBar
@@ -3389,6 +3445,7 @@ styleable ViewBackgroundHelper android_background backgroundTint backgroundTintM
 styleable ViewPager2 android_orientation
 styleable ViewStubCompat android_id android_layout android_inflatedId
 xml file_paths
+xml image_share_filepaths
 xml standalone_badge
 xml standalone_badge_gravity_bottom_end
 xml standalone_badge_gravity_bottom_start

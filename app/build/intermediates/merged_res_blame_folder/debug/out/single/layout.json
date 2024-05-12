@@ -1,0 +1,50 @@
+[
+    {
+        "merged": "gfg.bangkit.capstone.tunecheck.app-mergeDebugResources-45:/layout/fragment_profile.xml",
+        "source": "gfg.bangkit.capstone.tunecheck.app-main-48:/layout/fragment_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-mergeDebugResources-45:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-48:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-mergeDebugResources-45:\\layout\\activity_register.xml",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-48:\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-mergeDebugResources-45:\\layout\\activity_home.xml",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-48:\\layout\\activity_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-mergeDebugResources-45:\\layout\\activity_login.xml",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-48:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-mergeDebugResources-45:\\layout\\content_activity_main.xml",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-48:\\layout\\content_activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-mergeDebugResources-45:\\layout\\activity_profile.xml",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-48:\\layout\\activity_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-mergeDebugResources-45:\\layout\\activity_splash_screen.xml",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-48:\\layout\\activity_splash_screen.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-mergeDebugResources-45:\\layout\\fragment_list.xml",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-48:\\layout\\fragment_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-mergeDebugResources-45:\\layout\\item.xml",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-48:\\layout\\item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-mergeDebugResources-45:\\layout\\fragment_profile.xml",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-48:\\layout\\fragment_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-mergeDebugResources-45:\\layout\\fragment_home.xml",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-48:\\layout\\fragment_home.xml"
+    }
+]

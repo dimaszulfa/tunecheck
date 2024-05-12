@@ -5,9 +5,9 @@
     android:height="30dp">
     <path
         android:pathData="M3.5 4L14.5 4L18.5 8L46.5 8L48 9.5L48 44.5L46.5 46L3.5 46L2 44.5L2 5.5L3.5 4ZM4 6L4 13L46 13L46 10L18 10L14 6L4 6ZM4 15L4 44L46 44L46 15L4 15Z"
-        android:fillColor="#FFFFFF"
+        android:fillColor="#000000"
         android:fillAlpha="0.9647059"
-        android:strokeColor="#FFFFFF"
+        android:strokeColor="#000000"
         android:strokeAlpha="0.9647059"
         android:strokeWidth="1" />
 </vector>

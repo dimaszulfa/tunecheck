@@ -18,7 +18,7 @@
         android:id="@+id/bottomNav"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        app:backgroundColor="@color/black"
+        app:backgroundColor="@color/primaryApp"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_alignParentBottom="true"
 
