@@ -21,13 +21,15 @@ import androidx.appcompat.widget.Toolbar
 import androidx.core.content.FileProvider
 import androidx.exifinterface.media.ExifInterface
 import androidx.lifecycle.lifecycleScope
-import gfg.bangkit.capstone.tunecheck.auth.RegisterActivity
+import gfg.bangkit.capstone.tunecheck.database.Database
+import gfg.bangkit.capstone.tunecheck.model.User
+import gfg.bangkit.capstone.tunecheck.utils.Constants
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
-import me.ibrahimsn.lib.SmoothBottomBar
 import org.tensorflow.lite.support.image.TensorImage
 import org.tensorflow.lite.task.vision.detector.Detection
 import org.tensorflow.lite.task.vision.detector.ObjectDetector
+import java.io.ByteArrayOutputStream
 import java.io.File
 import java.io.IOException
 import java.text.SimpleDateFormat
@@ -35,7 +37,10 @@ import java.util.*
 import kotlin.math.max
 import kotlin.math.min
 
+
 class MainActivity : AppCompatActivity(), View.OnClickListener {
+    private lateinit var myUserDetails : User
+
     companion object {
         const val TAG = "TFLite - ODT"
         const val REQUEST_IMAGE_CAPTURE: Int = 1
@@ -51,7 +56,12 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var imgSampleThree: ImageView
     private lateinit var tvPlaceholder: TextView
     private lateinit var currentPhotoPath: String
+    private lateinit var btnAjukanPengajuan: Button
 //    private lateinit var bottomBar: SmoothBottomBar
+ fun getDataUser(user: User){
+    myUserDetails = user
+}
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -59,6 +69,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         selectBtn = findViewById(R.id.pickImage)
         captureImageFab = findViewById(R.id.captureImageFab)
         inputImageView = findViewById(R.id.imageView)
+        btnAjukanPengajuan = findViewById(R.id.btnAjukanPengajuan)
         imgSampleOne = findViewById(R.id.imgSampleOne)
         imgSampleTwo = findViewById(R.id.imgSampleTwo)
         imgSampleThree = findViewById(R.id.imgSampleThree)
@@ -66,7 +77,12 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     val toolbar = findViewById<Toolbar>(R.id.toolbar)
     setSupportActionBar(toolbar)
 //        bottomBar = findViewById(R.id.bottomBar)
-
+    if (intent.hasExtra(Constants.EXTRA_USER_DETAILS)) {
+        // Get the user details from intent as a ParcelableExtra.
+        myUserDetails = intent.getParcelableExtra(Constants.EXTRA_USER_DETAILS)!!
+        Log.d("All data", myUserDetails.toString())
+    }
+        Database().getCurrentUserDetails(this)
         captureImageFab.setOnClickListener(this)
         imgSampleOne.setOnClickListener(this)
         imgSampleTwo.setOnClickListener(this)
@@ -98,9 +114,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         return when (item.itemId) {
             R.id.action_profile -> {
                 Log.d("tag", "clicked");
-                Toast.makeText(this@MainActivity, "Navigate To Profile", Toast.LENGTH_SHORT).show()
                 // Handle profile button click
-                val intent = Intent(this@MainActivity, ProfileActivity::class.java)
+                val intent = Intent(this@MainActivity, UpdateProfileActivity::class.java)
+                intent.putExtra(Constants.EXTRA_USER_DETAILS,myUserDetails)
                 startActivity(intent)
                 true
             }
@@ -159,6 +175,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         // Step 1: Create TFLite's TensorImage object
         val image = TensorImage.fromBitmap(bitmap)
 
+
         // Step 2: Initialize the detector object
         val options = ObjectDetector.ObjectDetectorOptions.builder()
                 .setMaxResults(5)
@@ -186,6 +203,23 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         val imgWithResult = drawDetectionResult(bitmap, resultToDisplay)
         runOnUiThread {
             inputImageView.setImageBitmap(imgWithResult)
+            btnAjukanPengajuan.visibility = View.VISIBLE
+
+        }
+        btnAjukanPengajuan.setOnClickListener {
+            val intent = Intent(this@MainActivity, PengajuanActivity::class.java)
+            val stream = ByteArrayOutputStream()
+            imgWithResult.compress(Bitmap.CompressFormat.PNG, 100, stream)
+            val path: String = MediaStore.Images.Media.insertImage(
+                baseContext.getContentResolver(),
+                imgWithResult,
+                "imgresult + ${System.currentTimeMillis()}",
+                null
+            )
+
+            val byteArray = stream.toByteArray()
+            intent.putExtra("image", Uri.parse(path))
+            startActivity(intent)
         }
         debugPrint(results)
     }
@@ -214,7 +248,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
      */
     private fun setViewAndDetect(bitmap: Bitmap) {
         // Display capture image
-        inputImageView.setImageBitmap(bitmap)
+//        inputImageView.setImageBitmap(bitmap)
         tvPlaceholder.visibility = View.INVISIBLE
 
         // Run ODT and display result

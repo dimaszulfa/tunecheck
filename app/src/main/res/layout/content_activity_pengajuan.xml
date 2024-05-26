@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/primaryApp"
+    tools:context="gfg.bangkit.capstone.tunecheck.MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tvDescription">
+
+        <TextView
+            android:id="@+id/tvPlaceholder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/tv_placeholder"
+            android:textAlignment="center"
+            android:textSize="40sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:contentDescription="@null"
+            android:scaleType="fitCenter" />
+
+
+        <LinearLayout
+            android:padding="4dp"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="100dp"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_marginEnd="30dp"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/btnMonth"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/baseline_date_range_24"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"/>
+
+                <TextView
+                    android:id="@+id/tvDate"
+                    android:text="dd/mm/yy"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="2dp"/>
+            <LinearLayout
+                android:id="@+id/btnLocation"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/baseline_location_on_24"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"/>
+
+<!--                <TextView-->
+<!--                    android:text="Lokasi"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"/>-->
+                <EditText
+                    android:id="@+id/etLocation"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:hint="Masukkan Lokasi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </FrameLayout>
+
+<!--    <Button-->
+<!--        android:id="@+id/btnPengaduan"-->
+<!--        android:layout_above="@id/llSampleImage"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:text="Ajukan Pengaduan"-->
+<!--        android:layout_height="wrap_content"/>-->
+
+     <Button
+         android:layout_centerInParent="true"
+    android:layout_margin="24dp"
+         android:layout_above="@id/tvDescription"
+    android:text="Ajukan Pengaduan !"
+    android:id="@+id/btnAjukanPengaduan"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+    <Space
+        android:id="@+id/tvDescription"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="0dp"/>
+
+
+</RelativeLayout>

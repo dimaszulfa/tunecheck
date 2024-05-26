@@ -28,6 +28,15 @@
             android:adjustViewBounds="true"
             android:contentDescription="@null"
             android:scaleType="fitCenter" />
+
+        <Button
+            android:visibility="gone"
+            android:layout_gravity="center|bottom"
+            android:id="@+id/btnAjukanPengajuan"
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:text="Ajukan Pengajuan"
+            android:layout_height="wrap_content"/>
     </FrameLayout>
 
     <TextView

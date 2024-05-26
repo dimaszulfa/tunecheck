@@ -23,6 +23,9 @@ public final class ContentActivityMainBinding implements ViewBinding {
   private final RelativeLayout rootView;
 
   @NonNull
+  public final Button btnAjukanPengajuan;
+
+  @NonNull
   public final Button captureImageFab;
 
   @NonNull
@@ -53,12 +56,13 @@ public final class ContentActivityMainBinding implements ViewBinding {
   public final TextView tvPlaceholder;
 
   private ContentActivityMainBinding(@NonNull RelativeLayout rootView,
-      @NonNull Button captureImageFab, @NonNull ImageView imageView,
-      @NonNull ImageView imgSampleOne, @NonNull ImageView imgSampleThree,
-      @NonNull ImageView imgSampleTwo, @NonNull LinearLayout llSampleImage,
-      @NonNull LinearLayout llbtn, @NonNull Button pickImage, @NonNull TextView tvDescription,
-      @NonNull TextView tvPlaceholder) {
+      @NonNull Button btnAjukanPengajuan, @NonNull Button captureImageFab,
+      @NonNull ImageView imageView, @NonNull ImageView imgSampleOne,
+      @NonNull ImageView imgSampleThree, @NonNull ImageView imgSampleTwo,
+      @NonNull LinearLayout llSampleImage, @NonNull LinearLayout llbtn, @NonNull Button pickImage,
+      @NonNull TextView tvDescription, @NonNull TextView tvPlaceholder) {
     this.rootView = rootView;
+    this.btnAjukanPengajuan = btnAjukanPengajuan;
     this.captureImageFab = captureImageFab;
     this.imageView = imageView;
     this.imgSampleOne = imgSampleOne;
@@ -98,6 +102,12 @@ public final class ContentActivityMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btnAjukanPengajuan;
+      Button btnAjukanPengajuan = ViewBindings.findChildViewById(rootView, id);
+      if (btnAjukanPengajuan == null) {
+        break missingId;
+      }
+
       id = R.id.captureImageFab;
       Button captureImageFab = ViewBindings.findChildViewById(rootView, id);
       if (captureImageFab == null) {
@@ -158,9 +168,9 @@ public final class ContentActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ContentActivityMainBinding((RelativeLayout) rootView, captureImageFab, imageView,
-          imgSampleOne, imgSampleThree, imgSampleTwo, llSampleImage, llbtn, pickImage,
-          tvDescription, tvPlaceholder);
+      return new ContentActivityMainBinding((RelativeLayout) rootView, btnAjukanPengajuan,
+          captureImageFab, imageView, imgSampleOne, imgSampleThree, imgSampleTwo, llSampleImage,
+          llbtn, pickImage, tvDescription, tvPlaceholder);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

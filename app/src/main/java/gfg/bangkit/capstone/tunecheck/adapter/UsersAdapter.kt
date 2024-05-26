@@ -24,8 +24,8 @@ class UsersAdapter(private val dataList: List<User>) :
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val data = dataList[position]
-        holder.titleTextView.text = data.name
-        holder.descriptionTextView.text = data.name
+        holder.titleTextView.text = data.firstName + data.lastName
+        holder.descriptionTextView.text = data.firstName
     }
 
     override fun getItemCount(): Int {

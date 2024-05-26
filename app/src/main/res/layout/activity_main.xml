@@ -15,7 +15,8 @@
             app:menu="@menu/menu_main"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            app:title="Title"
+            app:title="CNReport"
+            app:titleTextColor="@color/colorWhite"
              app:layout_scrollFlags="scroll|enterAlways"/> <!-- Flags untuk AppBar -->
 
     </com.google.android.material.appbar.AppBarLayout>

@@ -18,6 +18,19 @@
         android:theme="@style/Theme.ObjectDetection"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".UpdateProfileActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".utils.StateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FormPengaduanActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
             android:name=".ProfileActivity"
             android:exported="false" />
         <activity
@@ -31,14 +44,25 @@
         </activity>
         <activity
             android:name=".auth.RegisterActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
+        <activity
+            android:name=".ReportDetailActivity"
+            android:exported="true" />
+
         <activity
             android:name=".auth.LoginActivity"
-            android:exported="true" />
+            android:exported="true" >
+
+        </activity>
         <activity
             android:name=".HomeActivity"
             android:exported="true" />
-        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".PengajuanActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
 
         <provider
             android:name="androidx.core.content.FileProvider"
