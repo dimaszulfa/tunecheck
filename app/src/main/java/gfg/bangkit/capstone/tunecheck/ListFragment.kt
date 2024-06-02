@@ -1,24 +1,38 @@
 package gfg.bangkit.capstone.tunecheck
 
 import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
 import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
+import android.view.MotionEvent
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.widget.doAfterTextChanged
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.Firebase
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.firestore
+import gfg.bangkit.capstone.tunecheck.adapter.ReportsAdapter
 import gfg.bangkit.capstone.tunecheck.model.User
 import gfg.bangkit.capstone.tunecheck.adapter.UsersAdapter
+import gfg.bangkit.capstone.tunecheck.database.Database
+import gfg.bangkit.capstone.tunecheck.databinding.FragmentListBinding
+import gfg.bangkit.capstone.tunecheck.databinding.FragmentProfileBinding
+import gfg.bangkit.capstone.tunecheck.model.Report
+import gfg.bangkit.capstone.tunecheck.utils.UiComponentsFragment
 
 
-class ListFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
+class ListFragment : UiComponentsFragment() {
+
+
+    private var _binding: FragmentListBinding? = null
+    private lateinit var reports: ArrayList<Report>
+
+    private val binding get() = _binding!!
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,65 +45,62 @@ class ListFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        // Inflate the layout for this fragment
-        val view = inflater.inflate(R.layout.fragment_list, container, false)
-        Log.d("CREATED", "CREATED")
-        val recyclerView = view.findViewById<RecyclerView>(R.id.recyclerView)
-        recyclerView.layoutManager = LinearLayoutManager(context)
 
-        val firestore = Firebase.firestore
-        val collectionReference = firestore.collection("users")
-
-//        firestore.collection("users")
-//            .get()
-//            .addOnSuccessListener { result ->
-//                for (document in result) {
-//                    Log.d("SUKSES", "${document.id} => ${document.data}")
-//                }
-//            }
-//            .addOnFailureListener { exception ->
-//                Log.w("ERROR", "Error getting documents.", exception)
-//            }
+        _binding = FragmentListBinding.inflate(layoutInflater,container,false)
 
 
-        collectionReference.addSnapshotListener { snapshot, exception ->
-            Log.e("fetch", "fetching data fetching data: ${snapshot.toString()}")
-
-            if (exception != null) {
-                Log.e("TAG", "Error fetching data: $exception")
-                return@addSnapshotListener
-            }
-
-            Log.e("TAG", "berhasil get data")
-
-            val dataList = ArrayList<User>()
-
-            snapshot?.forEach { documentSnapshot ->
-                Log.e("TAG", "doc snapshot")
-
-
-                if (documentSnapshot.exists()) {
-                    Log.e("TAG", "EXISTS")
-
-                    try {
-                        Log.e("TAG", "PROCESS GET DATA")
-
-                        val data = documentSnapshot.toObject(User::class.java)
-                        data?.let { dataList.add(it) }
-                    } catch (e: Exception) {
-                        Log.e("TAG", "Error converting snapshot to object: ${e.message}")
-                    }
-                } else {
-                    Log.d("TAG", "Document does not exist")
-                }
-            }
-
-            val adapter = UsersAdapter(dataList)
-            recyclerView.adapter = adapter
+        binding.btnSearch.setOnClickListener {
+            search(binding.searchEditText.text.toString())
         }
 
-        return view;
+        return binding.root;
+
+
+
+
     }
 
+    private fun search(searchText: String) {
+        showProgressBar("Sedang mencari data")
+      Database().searchReports(this, searchText)
+    }
+
+    fun successSearch(productList: ArrayList<Report>){
+        hideProgressBar();
+        binding.rvReports.adapter = null
+        val adapterDashboard = ReportsAdapter(requireActivity(),productList)
+        binding.rvReports.adapter = adapterDashboard
+        binding.rvReports.adapter?.notifyDataSetChanged()
+
+    }
+
+    override fun onResume() {
+        super.onResume()
+        getProductsFromFB()
+    }
+
+    private fun getProductsFromFB(){
+        showProgressBar(getString(R.string.please_wait))
+        Database().getAllReport(this)
+
+    }
+
+
+    fun successGetReports(allProductList : ArrayList<Report>){
+        hideProgressBar()
+        if(allProductList.size>0){
+//            tv_no_dashboard_items_found.visibility = View.GONE
+            binding.rvReports.visibility = View.VISIBLE
+            binding.rvReports.layoutManager = LinearLayoutManager(activity)
+            binding.rvReports.setHasFixedSize(true)
+            val adapterDashboard = ReportsAdapter(requireActivity(),allProductList)
+            binding.rvReports.adapter = adapterDashboard
+        }else{
+            binding.rvReports.visibility = View.GONE
+//            tv_no_dashboard_items_found.visibility = View.VISIBLE
+        }
+
+
+    }
 
 }

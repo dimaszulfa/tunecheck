@@ -4,7 +4,9 @@ import android.app.Activity
 import android.app.DatePickerDialog
 import android.content.ActivityNotFoundException
 import android.content.Intent
+import android.content.pm.PackageManager
 import android.graphics.*
+import android.location.Geocoder
 import android.net.Uri
 import android.os.Bundle
 import android.os.Environment
@@ -19,12 +21,22 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
+import android.Manifest
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
+import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.core.content.FileProvider
 import androidx.exifinterface.media.ExifInterface
 import androidx.lifecycle.lifecycleScope
+import com.google.android.gms.location.FusedLocationProviderClient
+import com.google.android.gms.location.LocationServices
+import com.google.android.gms.maps.CameraUpdateFactory
+import com.google.android.gms.maps.GoogleMap
+import com.google.android.gms.maps.OnMapReadyCallback
+import com.google.android.gms.maps.SupportMapFragment
+import com.google.android.gms.maps.model.LatLng
+import com.google.android.gms.maps.model.MarkerOptions
 import gfg.bangkit.capstone.tunecheck.database.Database
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -39,7 +51,7 @@ import kotlin.math.max
 import kotlin.math.min
 
 
-class PengajuanActivity : AppCompatActivity() {
+class PengajuanActivity : AppCompatActivity(), OnMapReadyCallback {
     companion object {
         const val TAG = "TFLite - ODT"
         const val REQUEST_IMAGE_CAPTURE: Int = 1
@@ -53,6 +65,9 @@ class PengajuanActivity : AppCompatActivity() {
     private lateinit var tvDate :TextView
     private lateinit var btnAjukanPengaduan :Button
     private lateinit var etLocation :EditText
+    private lateinit var fusedLocationClient: FusedLocationProviderClient
+    private val LOCATION_PERMISSION_REQUEST_CODE = 1
+    private lateinit var mMap: GoogleMap
 
     fun imageUploadSuccess(imageURL : String){
 //        updateUserProfileDetails()
@@ -63,27 +78,34 @@ class PengajuanActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pengajuan)
 //        val byteArray = intent.get("image")
+        fusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
+        val mapFragment = supportFragmentManager
+            .findFragmentById(R.id.map_fragment_container) as SupportMapFragment
+        mapFragment.getMapAsync(this)
+        // Check for location permissions and request them if not already granted
+
+        // Check for location permissions and request them if not already granted
+        checkLocationPermission()
         val uri: Uri? = intent?.getParcelableExtra("image")
-//        val bmp = BitmapFactory.decodeByteArray(byteArray, 0, byteArray!!.size)
-//    val uri: Uri? = uriString?.let { Uri.parse(it) }
-//
+        val dateFormat = SimpleDateFormat("dd/MM/yyyy", Locale.getDefault())
+
+        // Dapatkan tanggal hari ini
+        val today = Date()
+
+        // Format tanggal hari ini menjadi string
+        val todayString = dateFormat.format(today)
+
         inputImageView = findViewById(R.id.imageView)
         btnDate = findViewById<LinearLayout>(R.id.btnMonth)
         btnAjukanPengaduan = findViewById<Button>(R.id.btnAjukanPengaduan)
         tvPlaceholder = findViewById(R.id.tvPlaceholder)
         tvDate = findViewById(R.id.tvDate)
         etLocation = findViewById(R.id.etLocation)
-//        val toolbar = findViewById<Toolbar>(R.id.toolbar)
-//        setSupportActionBar(toolbar)
-//        bottomBar = findViewById(R.id.bottomBar)
+
         inputImageView.setImageURI(uri)
-        btnDate.setOnClickListener {
-            showDatePickerDialog { selectedDate ->
-//                dateTextView.text = selectedDate
-            Toast.makeText(this, selectedDate, Toast.LENGTH_SHORT).show()
-                tvDate.text = selectedDate;
-            }
-        }
+
+
+        tvDate.setText(todayString)
 
         btnAjukanPengaduan.setOnClickListener {
             val date = tvDate.text.trim().toString()
@@ -106,20 +128,24 @@ class PengajuanActivity : AppCompatActivity() {
                 intent.putExtra("location", etLocation)
                 intent.putExtra("image", uri)
                 startActivity(intent)
-                Toast.makeText(this, "Masuk", Toast.LENGTH_SHORT).show()
             }
         }
 
-//        bottomBar.onItemSelected = {
-//            Toast.makeText(this@MainActivity,"Item $it selected",Toast.LENGTH_SHORT).show()
-//        }
-//
-//        bottomBar.onItemReselected = {
-//            Toast.makeText(this@MainActivity,"Item $it re selected",Toast.LENGTH_SHORT).show()
-//        }
+
 
     }
 
+
+    override fun onMapReady(googleMap: GoogleMap) {
+        mMap = googleMap
+        getLastKnownLocation()
+    }
+
+    private fun showLocationOnMap(latitude: Double, longitude: Double) {
+        val currentLocation = LatLng(latitude, longitude)
+        mMap.addMarker(MarkerOptions().position(currentLocation).title("You are here"))
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(currentLocation, 15f))
+    }
     private fun showDatePickerDialog(onDateSelected: (String) -> Unit) {
         val calendar = Calendar.getInstance()
         val year = calendar.get(Calendar.YEAR)
@@ -180,37 +206,75 @@ class PengajuanActivity : AppCompatActivity() {
     }
 
 
-    /**
-     * onClick(v: View?)
-     *      Detect touches on the UI components
-     */
-
-
-    /**
-     * getCapturedImage():
-     *      Decodes and crops the captured image from camera.
-     */
-
-    /**
-     * getSampleImage():
-     *      Get image form drawable and convert to bitmap.
-     */
-    private fun getSampleImage(drawable: Int): Bitmap {
-        return BitmapFactory.decodeResource(resources, drawable, BitmapFactory.Options().apply {
-            inMutable = true
-        })
+    private fun checkLocationPermission() {
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
+            != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(
+                this,
+                arrayOf(Manifest.permission.ACCESS_FINE_LOCATION),
+                LOCATION_PERMISSION_REQUEST_CODE
+            )
+        } else {
+            getLastKnownLocation()
+        }
     }
 
-    /**
-     * rotateImage():
-     *     Decodes and crops the captured image from camera.
-     */
-    private fun rotateImage(source: Bitmap, angle: Float): Bitmap {
-        val matrix = Matrix()
-        matrix.postRotate(angle)
-        return Bitmap.createBitmap(
-            source, 0, 0, source.width, source.height,
-            matrix, true
-        )
+    override fun onRequestPermissionsResult(
+        requestCode: Int,
+        permissions: Array<out String>,
+        grantResults: IntArray
+    ) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+        if (requestCode == LOCATION_PERMISSION_REQUEST_CODE) {
+            if ((grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED)) {
+                getLastKnownLocation()
+            } else {
+                // Permission denied
+                Toast.makeText(this, "Kamu harus mengaktifkan lokasi untuk mendapatkan lokasi saat init", Toast.LENGTH_SHORT).show()
+            }
+        }
+    }
+
+    private fun getLastKnownLocation() {
+        if (ActivityCompat.checkSelfPermission(
+                this,
+                Manifest.permission.ACCESS_FINE_LOCATION
+            ) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(
+                this,
+                Manifest.permission.ACCESS_COARSE_LOCATION
+            ) != PackageManager.PERMISSION_GRANTED
+        ) {
+            return
+        }
+        fusedLocationClient.lastLocation
+            .addOnSuccessListener { location ->
+                location?.let {
+                    val latitude = it.latitude
+                    val longitude = it.longitude
+                    showLocationOnMap(latitude, longitude)
+                    getAddressFromLocation(latitude,longitude)
+                } ?: run {
+                    // Location is null, handle the case
+                    Toast.makeText(this, "Location not found", Toast.LENGTH_SHORT).show()
+                }
+            }
+            .addOnFailureListener { exception ->
+                // Handle exception
+                Toast.makeText(this, "Error getting location: ${exception.message}", Toast.LENGTH_SHORT).show()
+            }
+    }
+
+    private fun getAddressFromLocation(latitude: Double, longitude: Double) {
+        val geocoder = Geocoder(this, Locale.getDefault())
+        val addresses = geocoder.getFromLocation(latitude, longitude, 1)
+        if (addresses!!.isNotEmpty()) {
+            val address = addresses[0]
+            val subDistrict = address.subLocality // Kecamatan
+            val city = address.locality // City
+            etLocation.setText(subDistrict+", "+city)
+            Log.d("ADDRESS", "${address}+${subDistrict}+${city}")
+
+            // Use the subDistrict and city as needed
+        }
     }
 }

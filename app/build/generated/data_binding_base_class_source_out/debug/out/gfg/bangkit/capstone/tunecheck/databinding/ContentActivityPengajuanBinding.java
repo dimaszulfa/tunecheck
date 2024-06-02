@@ -13,6 +13,7 @@ import android.widget.Space;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.fragment.app.FragmentContainerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import gfg.bangkit.capstone.tunecheck.R;
@@ -40,6 +41,9 @@ public final class ContentActivityPengajuanBinding implements ViewBinding {
   public final ImageView imageView;
 
   @NonNull
+  public final FragmentContainerView mapFragmentContainer;
+
+  @NonNull
   public final TextView tvDate;
 
   @NonNull
@@ -51,13 +55,15 @@ public final class ContentActivityPengajuanBinding implements ViewBinding {
   private ContentActivityPengajuanBinding(@NonNull RelativeLayout rootView,
       @NonNull Button btnAjukanPengaduan, @NonNull LinearLayout btnLocation,
       @NonNull LinearLayout btnMonth, @NonNull EditText etLocation, @NonNull ImageView imageView,
-      @NonNull TextView tvDate, @NonNull Space tvDescription, @NonNull TextView tvPlaceholder) {
+      @NonNull FragmentContainerView mapFragmentContainer, @NonNull TextView tvDate,
+      @NonNull Space tvDescription, @NonNull TextView tvPlaceholder) {
     this.rootView = rootView;
     this.btnAjukanPengaduan = btnAjukanPengaduan;
     this.btnLocation = btnLocation;
     this.btnMonth = btnMonth;
     this.etLocation = etLocation;
     this.imageView = imageView;
+    this.mapFragmentContainer = mapFragmentContainer;
     this.tvDate = tvDate;
     this.tvDescription = tvDescription;
     this.tvPlaceholder = tvPlaceholder;
@@ -120,6 +126,12 @@ public final class ContentActivityPengajuanBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.map_fragment_container;
+      FragmentContainerView mapFragmentContainer = ViewBindings.findChildViewById(rootView, id);
+      if (mapFragmentContainer == null) {
+        break missingId;
+      }
+
       id = R.id.tvDate;
       TextView tvDate = ViewBindings.findChildViewById(rootView, id);
       if (tvDate == null) {
@@ -139,7 +151,8 @@ public final class ContentActivityPengajuanBinding implements ViewBinding {
       }
 
       return new ContentActivityPengajuanBinding((RelativeLayout) rootView, btnAjukanPengaduan,
-          btnLocation, btnMonth, etLocation, imageView, tvDate, tvDescription, tvPlaceholder);
+          btnLocation, btnMonth, etLocation, imageView, mapFragmentContainer, tvDate, tvDescription,
+          tvPlaceholder);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

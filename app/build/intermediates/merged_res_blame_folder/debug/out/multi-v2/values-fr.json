@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "gfg.bangkit.capstone.tunecheck.app-mergeDebugResources-45:/values-fr/values-fr.xml",
+            "outputFile": "gfg.bangkit.capstone.tunecheck.app-mergeDebugResources-46:/values-fr/values-fr.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Dimas\\.gradle\\caches\\transforms-3\\5bd2c1b1e2ffe0276153404257316537\\transformed\\appcompat-1.2.0\\res\\values-fr\\values-fr.xml",
@@ -38,6 +38,23 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\Dimas\\.gradle\\caches\\transforms-3\\d8a45c16f281a8a6b6009432f3bc8db8\\transformed\\jetified-play-services-basement-18.4.0\\res\\values-fr\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "195",
+                        "endColumns": "160",
+                        "endOffsets": "355"
+                    },
+                    "to": {
+                        "startLines": "47",
+                        "startColumns": "4",
+                        "startOffsets": "4724",
+                        "endColumns": "164",
+                        "endOffsets": "4884"
+                    }
+                },
+                {
                     "source": "C:\\Users\\Dimas\\.gradle\\caches\\transforms-3\\2f3a63cfe5cd72965a1eebabb1f39dff\\transformed\\browser-1.4.0\\res\\values-fr\\values-fr.xml",
                     "from": {
                         "startLines": "2,3,4,5",
@@ -52,23 +69,6 @@
                         "startOffsets": "6063,6333,6435,6554",
                         "endColumns": "106,101,118,104",
                         "endOffsets": "6165,6430,6549,6654"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Dimas\\.gradle\\caches\\transforms-3\\e35d218bf694925ea880cb5f0c749980\\transformed\\jetified-play-services-base-18.0.1\\res\\values-fr\\values.xml",
-                    "from": {
-                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
-                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-                        "startOffsets": "193,295,471,597,702,869,998,1115,1224,1398,1506,1687,1819,1975,2150,2219,2282",
-                        "endColumns": "101,175,125,104,166,128,116,108,173,107,180,131,155,174,68,62,79",
-                        "endOffsets": "294,470,596,701,868,997,1114,1223,1397,1505,1686,1818,1974,2149,2218,2281,2361"
-                    },
-                    "to": {
-                        "startLines": "39,40,41,42,43,44,45,46,48,49,50,51,52,53,54,55,56",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "3661,3767,3947,4077,4186,4357,4490,4611,4889,5067,5179,5364,5500,5660,5839,5912,5979",
-                        "endColumns": "105,179,129,108,170,132,120,112,177,111,184,135,159,178,72,66,83",
-                        "endOffsets": "3762,3942,4072,4181,4352,4485,4606,4719,5062,5174,5359,5495,5655,5834,5907,5974,6058"
                     }
                 },
                 {
@@ -91,23 +91,6 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Dimas\\.gradle\\caches\\transforms-3\\7a17f70a665feec1f74506cc8a5cf2a3\\transformed\\jetified-play-services-basement-18.3.0\\res\\values-fr\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "195",
-                        "endColumns": "160",
-                        "endOffsets": "355"
-                    },
-                    "to": {
-                        "startLines": "47",
-                        "startColumns": "4",
-                        "startOffsets": "4724",
-                        "endColumns": "164",
-                        "endOffsets": "4884"
-                    }
-                },
-                {
                     "source": "C:\\Users\\Dimas\\.gradle\\caches\\transforms-3\\6c5e0a1f55d4d757e183d84b21368fc8\\transformed\\core-1.9.0\\res\\values-fr\\values-fr.xml",
                     "from": {
                         "startLines": "2",
@@ -122,6 +105,23 @@
                         "startOffsets": "10871",
                         "endColumns": "100",
                         "endOffsets": "10967"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Dimas\\.gradle\\caches\\transforms-3\\4e0ad154ed01aaa7a2b75e6fc591130d\\transformed\\jetified-play-services-base-18.5.0\\res\\values-fr\\values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
+                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+                        "startOffsets": "193,295,471,597,702,869,998,1115,1224,1398,1506,1687,1819,1975,2150,2219,2282",
+                        "endColumns": "101,175,125,104,166,128,116,108,173,107,180,131,155,174,68,62,79",
+                        "endOffsets": "294,470,596,701,868,997,1114,1223,1397,1505,1686,1818,1974,2149,2218,2281,2361"
+                    },
+                    "to": {
+                        "startLines": "39,40,41,42,43,44,45,46,48,49,50,51,52,53,54,55,56",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "3661,3767,3947,4077,4186,4357,4490,4611,4889,5067,5179,5364,5500,5660,5839,5912,5979",
+                        "endColumns": "105,179,129,108,170,132,120,112,177,111,184,135,159,178,72,66,83",
+                        "endOffsets": "3762,3942,4072,4181,4352,4485,4606,4719,5062,5174,5359,5495,5655,5834,5907,5974,6058"
                     }
                 },
                 {

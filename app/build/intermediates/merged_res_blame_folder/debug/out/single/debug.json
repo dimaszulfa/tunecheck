@@ -1,250 +1,270 @@
 [
     {
-        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-47:\\mipmap-mdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-49:\\mipmap-mdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-48:\\drawable_ic_search.png.flat",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-50:\\drawable\\ic_search.png"
     },
     {
-        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-47:\\mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-49:\\mipmap-xhdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-48:\\drawable_baseline_home_24.xml.flat",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-50:\\drawable\\baseline_home_24.xml"
     },
     {
-        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-47:\\mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-49:\\mipmap-xxhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-48:\\layout_activity_ui_components.xml.flat",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-50:\\layout\\activity_ui_components.xml"
     },
     {
-        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-47:\\layout_fragment_ui_components.xml.flat",
-        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-49:\\layout\\fragment_ui_components.xml"
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-48:\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-50:\\mipmap-xhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-47:\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-49:\\mipmap-xxxhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-48:\\drawable_edit_text_outline.xml.flat",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-50:\\drawable\\edit_text_outline.xml"
     },
     {
-        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-47:\\mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-49:\\mipmap-xxhdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-48:\\layout_content_activity_pengajuan.xml.flat",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-50:\\layout\\content_activity_pengajuan.xml"
     },
     {
-        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-47:\\xml_file_paths.xml.flat",
-        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-49:\\xml\\file_paths.xml"
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-48:\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-50:\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-47:\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-49:\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-48:\\layout_fragment_profile.xml.flat",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-50:\\layout\\fragment_profile.xml"
     },
     {
-        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-47:\\layout_dialog_progress.xml.flat",
-        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-49:\\layout\\dialog_progress.xml"
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-48:\\drawable_rounded_corner.xml.flat",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-50:\\drawable\\rounded_corner.xml"
     },
     {
-        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-47:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-49:\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-48:\\drawable_et_border.xml.flat",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-50:\\drawable\\et_border.xml"
     },
     {
-        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-47:\\drawable_motor.jpg.flat",
-        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-49:\\drawable\\motor.jpg"
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-48:\\layout_toolbar_layout.xml.flat",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-50:\\layout\\toolbar_layout.xml"
     },
     {
-        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-47:\\drawable_success.png.flat",
-        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-49:\\drawable\\success.png"
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-48:\\drawable_button_background.xml.flat",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-50:\\drawable\\button_background.xml"
     },
     {
-        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-47:\\drawable_baseline_format_list_bulleted_24.xml.flat",
-        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-49:\\drawable\\baseline_format_list_bulleted_24.xml"
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-48:\\drawable_ic_camera.xml.flat",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-50:\\drawable\\ic_camera.xml"
     },
     {
-        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-47:\\layout_activity_form_pengaduan.xml.flat",
-        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-49:\\layout\\activity_form_pengaduan.xml"
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-48:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-50:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-47:\\menu_menu_main.xml.flat",
-        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-49:\\menu\\menu_main.xml"
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-48:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-50:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-47:\\mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-49:\\mipmap-xhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-48:\\drawable_baseline_date_range_24.xml.flat",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-50:\\drawable\\baseline_date_range_24.xml"
     },
     {
-        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-47:\\menu_menu.xml.flat",
-        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-49:\\menu\\menu.xml"
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-48:\\drawable_baseline_format_list_bulleted_24.xml.flat",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-50:\\drawable\\baseline_format_list_bulleted_24.xml"
     },
     {
-        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-47:\\drawable_rounded_corner.xml.flat",
-        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-49:\\drawable\\rounded_corner.xml"
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-48:\\drawable_baseline_location_on_24.xml.flat",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-50:\\drawable\\baseline_location_on_24.xml"
     },
     {
-        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-47:\\drawable_ic_profile.xml.flat",
-        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-49:\\drawable\\ic_profile.xml"
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-48:\\drawable_motor_3.jpg.flat",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-50:\\drawable\\motor_3.jpg"
     },
     {
-        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-47:\\layout_fragment_list.xml.flat",
-        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-49:\\layout\\fragment_list.xml"
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-48:\\layout_activity_form_pengaduan.xml.flat",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-50:\\layout\\activity_form_pengaduan.xml"
     },
     {
-        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-47:\\drawable_baseline_date_range_24.xml.flat",
-        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-49:\\drawable\\baseline_date_range_24.xml"
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-48:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-50:\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-47:\\mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-49:\\mipmap-mdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-48:\\menu_menu_main.xml.flat",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-50:\\menu\\menu_main.xml"
     },
     {
-        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-47:\\drawable_avatar_image.png.flat",
-        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-49:\\drawable\\avatar_image.png"
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-48:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-50:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-47:\\drawable_et_border.xml.flat",
-        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-49:\\drawable\\et_border.xml"
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-48:\\drawable_uiw_logout.png.flat",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-50:\\drawable\\uiw_logout.png"
     },
     {
-        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-47:\\layout_fragment_home.xml.flat",
-        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-49:\\layout\\fragment_home.xml"
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-48:\\drawable_ic_folder.xml.flat",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-50:\\drawable\\ic_folder.xml"
     },
     {
-        "merged": "gfg.bangkit.capstone.tunecheck.app-merged_res-47:/layout_activity_pengajuan.xml.flat",
-        "source": "gfg.bangkit.capstone.tunecheck.app-main-49:/layout/activity_pengajuan.xml"
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-48:\\layout_activity_splash_screen.xml.flat",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-50:\\layout\\activity_splash_screen.xml"
     },
     {
-        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-47:\\drawable_ic_folder.xml.flat",
-        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-49:\\drawable\\ic_folder.xml"
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-48:\\layout_activity_profile.xml.flat",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-50:\\layout\\activity_profile.xml"
     },
     {
-        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-47:\\layout_activity_ui_components.xml.flat",
-        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-49:\\layout\\activity_ui_components.xml"
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-48:\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-50:\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-47:\\layout_content_activity_main.xml.flat",
-        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-49:\\layout\\content_activity_main.xml"
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-48:\\layout_activity_state.xml.flat",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-50:\\layout\\activity_state.xml"
     },
     {
-        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-47:\\drawable_uiw_logout.png.flat",
-        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-49:\\drawable\\uiw_logout.png"
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-48:\\drawable_motor_2.jpg.flat",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-50:\\drawable\\motor_2.jpg"
     },
     {
-        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-47:\\layout_activity_update_profile.xml.flat",
-        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-49:\\layout\\activity_update_profile.xml"
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-48:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-50:\\layout\\activity_login.xml"
     },
     {
-        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-47:\\layout_activity_splash_screen.xml.flat",
-        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-49:\\layout\\activity_splash_screen.xml"
+        "merged": "gfg.bangkit.capstone.tunecheck.app-merged_res-48:/layout_item_report.xml.flat",
+        "source": "gfg.bangkit.capstone.tunecheck.app-main-50:/layout/item_report.xml"
     },
     {
-        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-47:\\drawable_baseline_home_24.xml.flat",
-        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-49:\\drawable\\baseline_home_24.xml"
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-48:\\layout_activity_update_profile.xml.flat",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-50:\\layout\\activity_update_profile.xml"
     },
     {
-        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-47:\\drawable_motor_3.jpg.flat",
-        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-49:\\drawable\\motor_3.jpg"
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-48:\\layout_fragment_home.xml.flat",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-50:\\layout\\fragment_home.xml"
     },
     {
-        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-47:\\layout_activity_register.xml.flat",
-        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-49:\\layout\\activity_register.xml"
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-48:\\layout_fragment_ui_components.xml.flat",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-50:\\layout\\fragment_ui_components.xml"
     },
     {
-        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-47:\\drawable_button_background.xml.flat",
-        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-49:\\drawable\\button_background.xml"
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-48:\\drawable_splash.jpg.flat",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-50:\\drawable\\splash.jpg"
     },
     {
-        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-47:\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-49:\\mipmap-xxxhdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-48:\\drawable_logo.png.flat",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-50:\\drawable\\logo.png"
     },
     {
-        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-47:\\layout_activity_profile.xml.flat",
-        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-49:\\layout\\activity_profile.xml"
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-48:\\menu_menu.xml.flat",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-50:\\menu\\menu.xml"
     },
     {
-        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-47:\\drawable_splash.jpg.flat",
-        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-49:\\drawable\\splash.jpg"
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-48:\\layout_fragment_list.xml.flat",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-50:\\layout\\fragment_list.xml"
     },
     {
-        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-47:\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-pngs-42:\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-48:\\layout_item.xml.flat",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-50:\\layout\\item.xml"
     },
     {
-        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-47:\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-49:\\drawable\\ic_launcher_background.xml"
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-48:\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-50:\\mipmap-hdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-47:\\layout_activity_report_detail.xml.flat",
-        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-49:\\layout\\activity_report_detail.xml"
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-48:\\layout_report_item.xml.flat",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-50:\\layout\\report_item.xml"
     },
     {
-        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-47:\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-49:\\mipmap-hdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-48:\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-50:\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-47:\\drawable_cnr.png.flat",
-        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-49:\\drawable\\cnr.png"
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-48:\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-50:\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-47:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-49:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-48:\\layout_activity_home.xml.flat",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-50:\\layout\\activity_home.xml"
     },
     {
-        "merged": "gfg.bangkit.capstone.tunecheck.app-merged_res-47:/layout_activity_form_pengaduan.xml.flat",
-        "source": "gfg.bangkit.capstone.tunecheck.app-main-49:/layout/activity_form_pengaduan.xml"
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-48:\\drawable_cnr.png.flat",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-50:\\drawable\\cnr.png"
     },
     {
-        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-47:\\drawable_motor_2.jpg.flat",
-        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-49:\\drawable\\motor_2.jpg"
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-48:\\drawable_ic_profile.xml.flat",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-50:\\drawable\\ic_profile.xml"
     },
     {
-        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-47:\\layout_progress_bar.xml.flat",
-        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-49:\\layout\\progress_bar.xml"
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-48:\\layout_fragment_report.xml.flat",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-50:\\layout\\fragment_report.xml"
     },
     {
-        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-47:\\layout_fragment_profile.xml.flat",
-        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-49:\\layout\\fragment_profile.xml"
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-48:\\xml_file_paths.xml.flat",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-50:\\xml\\file_paths.xml"
     },
     {
-        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-47:\\layout_item.xml.flat",
-        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-49:\\layout\\item.xml"
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-48:\\layout_activity_pengajuan.xml.flat",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-50:\\layout\\activity_pengajuan.xml"
     },
     {
-        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-47:\\mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-49:\\mipmap-hdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-48:\\layout_activity_register.xml.flat",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-50:\\layout\\activity_register.xml"
     },
     {
-        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-47:\\drawable_baseline_person_24.xml.flat",
-        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-49:\\drawable\\baseline_person_24.xml"
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-48:\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-50:\\mipmap-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-47:\\drawable_logo.png.flat",
-        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-49:\\drawable\\logo.png"
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-48:\\drawable_motor.jpg.flat",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-50:\\drawable\\motor.jpg"
     },
     {
-        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-47:\\layout_activity_pengajuan.xml.flat",
-        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-49:\\layout\\activity_pengajuan.xml"
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-48:\\layout_item_report.xml.flat",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-50:\\layout\\item_report.xml"
     },
     {
-        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-47:\\layout_activity_home.xml.flat",
-        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-49:\\layout\\activity_home.xml"
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-48:\\layout_content_activity_main.xml.flat",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-50:\\layout\\content_activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-47:\\drawable_ic_camera.xml.flat",
-        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-49:\\drawable\\ic_camera.xml"
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-48:\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-50:\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-47:\\layout_activity_state.xml.flat",
-        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-49:\\layout\\activity_state.xml"
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-48:\\layout_activity_report_detail.xml.flat",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-50:\\layout\\activity_report_detail.xml"
     },
     {
-        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-47:\\layout_report_item.xml.flat",
-        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-49:\\layout\\report_item.xml"
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-48:\\layout_activity_detail_report.xml.flat",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-50:\\layout\\activity_detail_report.xml"
     },
     {
-        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-47:\\layout_content_activity_pengajuan.xml.flat",
-        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-49:\\layout\\content_activity_pengajuan.xml"
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-48:\\drawable_success.png.flat",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-50:\\drawable\\success.png"
     },
     {
-        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-47:\\layout_fragment_report.xml.flat",
-        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-49:\\layout\\fragment_report.xml"
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-48:\\drawable_baseline_access_time_24.xml.flat",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-50:\\drawable\\baseline_access_time_24.xml"
     },
     {
-        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-47:\\layout_activity_login.xml.flat",
-        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-49:\\layout\\activity_login.xml"
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-48:\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-pngs-43:\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-47:\\drawable_baseline_location_on_24.xml.flat",
-        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-49:\\drawable\\baseline_location_on_24.xml"
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-48:\\layout_progress_bar.xml.flat",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-50:\\layout\\progress_bar.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-48:\\drawable_baseline_person_24.xml.flat",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-50:\\drawable\\baseline_person_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-48:\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-50:\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-48:\\drawable_avatar_image.png.flat",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-50:\\drawable\\avatar_image.png"
+    },
+    {
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-48:\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-50:\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-merged_res-48:\\layout_dialog_progress.xml.flat",
+        "source": "C:\\Users\\Dimas\\.gradle\\daemon\\8.2\\gfg.bangkit.capstone.tunecheck.app-main-50:\\layout\\dialog_progress.xml"
     }
 ]

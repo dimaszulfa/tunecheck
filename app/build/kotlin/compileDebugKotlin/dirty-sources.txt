@@ -1,2 +1,0 @@
-D:\flutter\Caps-Android-main\app\src\main\java\gfg\bangkit\capstone\tunecheck\HomeActivity.kt.kt
-D:\flutter\Caps-Android-main\app\src\main\java\gfg\bangkit\capstone\tunecheck\MainActivity.kt

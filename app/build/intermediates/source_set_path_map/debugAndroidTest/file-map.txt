@@ -1,4 +1,4 @@
-gfg.bangkit.capstone.tunecheck.test.app-androidTest-0 D:\flutter\Caps-Android-main\app\build\generated\res\resValues\androidTest\debug
-gfg.bangkit.capstone.tunecheck.test.app-mergeDebugAndroidTestResources-1 D:\flutter\Caps-Android-main\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
-gfg.bangkit.capstone.tunecheck.test.app-mergeDebugAndroidTestResources-2 D:\flutter\Caps-Android-main\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
-gfg.bangkit.capstone.tunecheck.test.app-merged_res-3 D:\flutter\Caps-Android-main\app\build\intermediates\merged_res\debugAndroidTest
+gfg.bangkit.capstone.tunecheck.test.app-androidTest-0 C:\Users\Dimas\Documents\projects\java_kotlin\tunecheck\app\build\generated\res\resValues\androidTest\debug
+gfg.bangkit.capstone.tunecheck.test.app-mergeDebugAndroidTestResources-1 C:\Users\Dimas\Documents\projects\java_kotlin\tunecheck\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+gfg.bangkit.capstone.tunecheck.test.app-mergeDebugAndroidTestResources-2 C:\Users\Dimas\Documents\projects\java_kotlin\tunecheck\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+gfg.bangkit.capstone.tunecheck.test.app-merged_res-3 C:\Users\Dimas\Documents\projects\java_kotlin\tunecheck\app\build\intermediates\merged_res\debugAndroidTest

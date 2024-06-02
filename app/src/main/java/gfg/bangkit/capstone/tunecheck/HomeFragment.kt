@@ -69,10 +69,8 @@ class HomeFragment : UiComponentsFragment() {
 
                             .data(
 
-//                                arrayOf(dataStastikCount[0],dataStastikCount[1],dataStastikCount[2],dataStastikCount[3],dataStastikCount[4],dataStastikCount[5],dataStastikCount[6])
                                 arrayOf(listOf(statistikData[0].first,statistikData[0].second),listOf(statistikData[1].first,statistikData[1].second),listOf(statistikData[2].first,statistikData[2].second),listOf(statistikData[3].first,statistikData[3].second),listOf(statistikData[4].first,statistikData[4].second),listOf(statistikData[5].first,statistikData[5].second),listOf(statistikData[6].first,statistikData[6].second))
-
-                            ).dataLabels(AADataLabels())
+                                    ).dataLabels(AADataLabels())
 
 
 

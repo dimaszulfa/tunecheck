@@ -4,7 +4,10 @@ package gfg.bangkit.capstone.tunecheck.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
@@ -20,11 +23,25 @@ public final class FragmentListBinding implements ViewBinding {
   private final FrameLayout rootView;
 
   @NonNull
-  public final RecyclerView recyclerView;
+  public final ImageView btnSearch;
 
-  private FragmentListBinding(@NonNull FrameLayout rootView, @NonNull RecyclerView recyclerView) {
+  @NonNull
+  public final RecyclerView rvReports;
+
+  @NonNull
+  public final EditText searchEditText;
+
+  @NonNull
+  public final TextView tvPelaporan;
+
+  private FragmentListBinding(@NonNull FrameLayout rootView, @NonNull ImageView btnSearch,
+      @NonNull RecyclerView rvReports, @NonNull EditText searchEditText,
+      @NonNull TextView tvPelaporan) {
     this.rootView = rootView;
-    this.recyclerView = recyclerView;
+    this.btnSearch = btnSearch;
+    this.rvReports = rvReports;
+    this.searchEditText = searchEditText;
+    this.tvPelaporan = tvPelaporan;
   }
 
   @Override
@@ -54,13 +71,32 @@ public final class FragmentListBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.recyclerView;
-      RecyclerView recyclerView = ViewBindings.findChildViewById(rootView, id);
-      if (recyclerView == null) {
+      id = R.id.btnSearch;
+      ImageView btnSearch = ViewBindings.findChildViewById(rootView, id);
+      if (btnSearch == null) {
         break missingId;
       }
 
-      return new FragmentListBinding((FrameLayout) rootView, recyclerView);
+      id = R.id.rvReports;
+      RecyclerView rvReports = ViewBindings.findChildViewById(rootView, id);
+      if (rvReports == null) {
+        break missingId;
+      }
+
+      id = R.id.searchEditText;
+      EditText searchEditText = ViewBindings.findChildViewById(rootView, id);
+      if (searchEditText == null) {
+        break missingId;
+      }
+
+      id = R.id.tvPelaporan;
+      TextView tvPelaporan = ViewBindings.findChildViewById(rootView, id);
+      if (tvPelaporan == null) {
+        break missingId;
+      }
+
+      return new FragmentListBinding((FrameLayout) rootView, btnSearch, rvReports, searchEditText,
+          tvPelaporan);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
